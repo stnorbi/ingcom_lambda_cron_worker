@@ -7,10 +7,13 @@
 .env
 *.env
 venv
+python
+__pycache__
 
 # serverless
 _meta
 .serverless
+
 
 # sample event
 input.json

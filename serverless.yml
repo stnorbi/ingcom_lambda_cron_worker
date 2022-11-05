@@ -2,8 +2,7 @@ service: batch-submit
 
 provider:
   name: aws
-  runtime: python3.7
-  role: arn:aws:iam::189416701607:role/service-role/lambdaBatchRole
+  runtime: python3.8
   region: eu-central-1
   timeout: 60
 
@@ -11,7 +10,7 @@ functions:
   ingcomSubmit:
     handler: handler.ingcom_submit
     layers:
-        - arn:aws:lambda:eu-central-1:189416701607:layer:ingcom_lambda_layer        
+        - arn:aws:lambda:eu-central-1:189416701607:layer:ingcom_lambda_layer:2        
 package:
     individually: true
     exclude:
@@ -22,3 +21,6 @@ package:
         - "Pipfile.*"
         - ".python-version"
         - ".gitignore"
+        - "*__pycache__/***"
+        - "*.git/***"
+

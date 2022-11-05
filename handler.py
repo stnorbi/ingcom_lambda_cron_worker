@@ -90,5 +90,4 @@ def ingcom_submit(event, context):
     })
 
 
-# if __name__=="__main__":
-#     ingcom_submit({"city_unic":["oroshaza","gyor"],"deal":["kiado"],"property_type":["lakas"]},'')
+
