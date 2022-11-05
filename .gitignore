@@ -1,0 +1,16 @@
+.vscode
+.python-version
+*.pyc
+
+
+# env files
+.env
+*.env
+venv
+
+# serverless
+_meta
+.serverless
+
+# sample event
+input.json
