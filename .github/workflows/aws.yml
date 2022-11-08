@@ -10,13 +10,13 @@
 #
  
 
-name: Deploy Prod
+name: Deploy master
 on:
   push:
     tags: # Deploy tag (e.g. v1.0) to production
       - 'v**'
 jobs:
-  deploy-prod:
+  deploy-master:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
