@@ -26,7 +26,7 @@ def ingcom_submit(event, context):
     # create dictionary of job definition
     job_definition = {
         'jobName': 'ingatlancom-scraper',
-        'jobDefinition': 'house-scraper:1',
+        'jobDefinition': 'house-scraper:10',
         'jobQueue': 'ingcom-scraper',
         'containerOverrides': {
             'environment': [
