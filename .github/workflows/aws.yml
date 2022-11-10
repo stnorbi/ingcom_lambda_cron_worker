@@ -13,8 +13,7 @@
 name: Deploy master
 on:
   push:
-    tags: # Deploy tag (e.g. v1.0) to production
-      - 'v**'
+    branches: [ master ]
 jobs:
   deploy-master:
     runs-on: ubuntu-latest
@@ -22,7 +21,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
     - name: Install Serverless Framework
       run: npm install -g serverless
     - name: Serverless AWS authentication
