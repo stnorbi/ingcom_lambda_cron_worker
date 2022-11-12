@@ -37,6 +37,38 @@ def ingcom_submit(event, context):
                 {
                     'name': 'ENV',
                     'value': 'production'
+                },
+                {
+                    'name': 'CONCURRENT_REQUESTS',
+                    'value': os.environ['CONCURRENT_REQUESTS']
+                },
+                {
+                    'name': 'CONCURRENT_ITEMS',
+                    'value': os.environ['CONCURRENT_ITEMS']
+                },
+                {
+                    'name': 'DOWNLOAD_DELAY',
+                    'value': os.environ['DOWNLOAD_DELAY']
+                },
+                {
+                    'name': 'REDIRECT_ENABLED',
+                    'value': os.environ['REDIRECT_ENABLED']
+                },
+                {
+                    'name': 'REACTOR_THREADPOOL_MAXSIZE',
+                    'value': os.environ['REACTOR_THREADPOOL_MAXSIZE']
+                },
+                {
+                    'name': 'DOWNLOAD_TIMEOUT',
+                    'value': os.environ['DOWNLOAD_TIMEOUT']
+                },
+                {
+                    'name': 'TELNETCONSOLE_ENABLED',
+                    'value': os.environ['TELNETCONSOLE_ENABLED']
+                },
+                {
+                    'name': 'LOG_LEVEL',
+                    'value': os.environ['LOG_LEVEL']
                 }
             ]
         }
