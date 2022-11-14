@@ -43,12 +43,24 @@ def ingcom_submit(event, context):
                     'value': os.environ['CONCURRENT_REQUESTS']
                 },
                 {
+                    'name': 'CONCURRENT_REQUESTS_PER_DOMAIN',
+                    'value': os.environ['CONCURRENT_REQUESTS_PER_DOMAIN']
+                },
+                {
+                    'name': 'CONCURRENT_REQUESTS_PER_IP',
+                    'value': os.environ['CONCURRENT_REQUESTS_PER_IP']
+                },                      
+                {
                     'name': 'CONCURRENT_ITEMS',
                     'value': os.environ['CONCURRENT_ITEMS']
                 },
                 {
                     'name': 'DOWNLOAD_DELAY',
                     'value': os.environ['DOWNLOAD_DELAY']
+                },
+                {
+                    'name': 'RANDOMIZE_DOWNLOAD_DELAY',
+                    'value': os.environ['RANDOMIZE_DOWNLOAD_DELAY']
                 },
                 {
                     'name': 'REDIRECT_ENABLED',
@@ -65,6 +77,38 @@ def ingcom_submit(event, context):
                 {
                     'name': 'TELNETCONSOLE_ENABLED',
                     'value': os.environ['TELNETCONSOLE_ENABLED']
+                },
+                {
+                    'name': 'AUTOTHROTTLE_ENABLED',
+                    'value': os.environ['AUTOTHROTTLE_ENABLED']
+                },
+                {
+                    'name': 'AUTOTHROTTLE_START_DELAY',
+                    'value': os.environ['AUTOTHROTTLE_START_DELAY']
+                },
+                {
+                    'name': 'AUTOTHROTTLE_MAX_DELAY',
+                    'value': os.environ['AUTOTHROTTLE_MAX_DELAY']
+                },
+                {
+                    'name': 'TELNETCONSOLE_ENABLED',
+                    'value': os.environ['TELNETCONSOLE_ENABLED']
+                },
+                {
+                    'name': 'AUTOTHROTTLE_TARGET_CONCURRENCY',
+                    'value': os.environ['AUTOTHROTTLE_TARGET_CONCURRENCY']
+                },
+                {
+                    'name': 'AUTOTHROTTLE_DEBUG',
+                    'value': os.environ['AUTOTHROTTLE_DEBUG']
+                },
+                {
+                    'name': 'RETRY_ENABLED',
+                    'value': os.environ['RETRY_ENABLED']
+                },
+                {
+                    'name': 'RETRY_HTTP_CODES',
+                    'value': os.environ['RETRY_HTTP_CODES']
                 },
                 {
                     'name': 'LOG_LEVEL',
