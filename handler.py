@@ -107,6 +107,10 @@ def ingcom_submit(event, context):
                     'value': os.environ['RETRY_ENABLED']
                 },
                 {
+                    'name': 'RETRY_TIMES',
+                    'value': os.environ['RETRY_TIMES']
+                },
+                {
                     'name': 'RETRY_HTTP_CODES',
                     'value': os.environ['RETRY_HTTP_CODES']
                 },
